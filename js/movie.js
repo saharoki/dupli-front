@@ -25,10 +25,10 @@ function setMovie(data) {
     $('#release').text('Release Date: '+data.movie.release_date);
     $('#score').text('Score: '+data.movie.score);
 
-    if(!data.rented_by_user){
+    if(!data.movie.rented_by_user){
         $('#rent-btn').removeClass('d-none');
     } else {
-        $('#rent').text(data.rent +'days').removeClass('d-none');
+        $('#rent').text('Left rent: '+ data.rent +'days').removeClass('d-none');
     }
 }
 
