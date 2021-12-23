@@ -20,10 +20,10 @@ function getMovie() {
 
 function setMovie(data) {
     $('#poster').attr("src",data.movie.image);
-    $('#title').text(data.movie.name);
-    $('#overview').text(data.movie.overview);
-    $('#release').text(data.movie.release_date);
-    $('#score').text(data.movie.score);
+    $('#title').text('Name: '+data.movie.name);
+    $('#overview').text('Overview: '+data.movie.overview);
+    $('#release').text('Release Date: '+data.movie.release_date);
+    $('#score').text('Score: '+data.movie.score);
 
     if(!data.rented_by_user){
         $('#rent-btn').removeClass('d-none');
