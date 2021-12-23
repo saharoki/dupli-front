@@ -11,8 +11,9 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data, status)
             {
-                if(data.hasOwnProperty('access_token')) {
-                    localStorage.setItem('token',data.access_token);
+                if(data.hasOwnProperty('token')) {
+                    localStorage.setItem('token',data.token);
+                    document.location = '/movies.html';
                 } else {
                     alert('Something went wrong. Try Again later')
                 }
