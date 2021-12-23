@@ -40,8 +40,7 @@ function setMovies(data) {
     $('.view-movie').on('click', function (event){
         event.preventDefault();
         localStorage.setItem('movie_id', $(this).data('id'));
-        console.log($(this).data('id'))
-       //window.location.replace("/movie.html");
+        window.location.replace("/movie.html");
     });
 }
 

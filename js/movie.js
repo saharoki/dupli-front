@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    localStorage.removeItem('movie_id');
     getMovie();
     $('#rent-btn').on('click', rent);
 });
