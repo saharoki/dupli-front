@@ -18,7 +18,7 @@ function getMovie() {
     });
 }
 
-function setMovies(data) {
+function setMovie(data) {
     $('#poster').src(data.movie.image);
     $('#title').text(data.movie.name);
     $('#overview').text(data.movie.overview);
