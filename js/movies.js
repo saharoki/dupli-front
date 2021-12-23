@@ -23,7 +23,7 @@ function setMovies(data) {
     $.each(data, function(k, v) {
         html +='<div class="col-md-4">\n' +
             '                    <div class="card mb-4 box-shadow">\n' +
-            '                        <div class="card-header">'+ v.name +'</div><img class="card-img-top" data-src="'+ v.image +'" alt="movie poster">\n' +
+            '                        <div class="card-header">'+ v.name +'</div><img class="card-img-top" src="'+ v.image +'" alt="movie poster">\n' +
             '                        <div class="card-body">\n' +
             '                            <p class="card-text">'+ v.overview +'</p>\n' +
             '                            <div class="d-flex justify-content-between align-items-center">\n' +
