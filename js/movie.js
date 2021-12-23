@@ -19,7 +19,7 @@ function getMovie() {
 }
 
 function setMovie(data) {
-    $('#poster').src(data.movie.image);
+    $('#poster').attr("src",data.movie.image);
     $('#title').text(data.movie.name);
     $('#overview').text(data.movie.overview);
     $('#release').text(data.movie.release_date);
