@@ -39,7 +39,7 @@ function setMovies(data) {
     $('#movie-list').html(html);
     $('.view-movie').on('click', function (event){
         event.preventDefault();
-        localStorage.setItem('movie_id', $(this).data('caseid'));
+        localStorage.setItem('movie_id', $(this).data('id'));
         window.location.replace("/movie.html");
     });
 }
