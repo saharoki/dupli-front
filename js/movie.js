@@ -28,7 +28,7 @@ function setMovie(data) {
     if(!data.movie.rented_by_user){
         $('#rent-btn').removeClass('d-none');
     } else {
-        $('#rent').text('Left rent: '+ data.rent +'days').removeClass('d-none');
+        $('#rent').text('Left rent: '+ data.rent +' days').removeClass('d-none');
     }
 }
 
