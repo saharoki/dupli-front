@@ -8,6 +8,7 @@ $(document).ready(function() {
                 email: $("#email").val(),
                 password: $("#pwd").val()
             },
+            dataType: "json",
             success: function(data, status)
             {
                 if(data.hasOwnProperty('access_token')) {
