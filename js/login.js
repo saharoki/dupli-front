@@ -3,7 +3,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: base_url+"/login",
+            url: "http://ec2-35-158-255-126.eu-central-1.compute.amazonaws.com/api/login",
             data: {
                 email: $("#email").val(),
                 password: $("#pwd").val()
