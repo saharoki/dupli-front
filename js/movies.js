@@ -7,7 +7,7 @@ $(document).ready(function() {
 function getMovies() {
     $.ajax({
         type: "GET",
-        url: base_url + "/api/movie",
+        url: base_url + "/movie",
         success: function(response, status) {
             setMovies(response);
         },
